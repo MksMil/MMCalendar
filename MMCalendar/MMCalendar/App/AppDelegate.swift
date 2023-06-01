@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  MMCalendar
-//
-//  Created by Миляев Максим on 01.08.2022.
-//
-
 import UIKit
 
 @main

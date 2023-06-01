@@ -10,9 +10,15 @@
 		297FF3542897D5780062E903 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297FF3532897D5780062E903 /* AppDelegate.swift */; };
 		297FF3562897D5780062E903 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297FF3552897D5780062E903 /* SceneDelegate.swift */; };
 		297FF3582897D5780062E903 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297FF3572897D5780062E903 /* ViewController.swift */; };
-		297FF35B2897D5780062E903 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 297FF3592897D5780062E903 /* Main.storyboard */; };
 		297FF35D2897D57A0062E903 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 297FF35C2897D57A0062E903 /* Assets.xcassets */; };
 		297FF3602897D57A0062E903 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 297FF35E2897D57A0062E903 /* LaunchScreen.storyboard */; };
+		297FF37A289AAC160062E903 /* Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297FF379289AAC160062E903 /* Properties.swift */; };
+		297FF383289AEC2B0062E903 /* MainScreenAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297FF382289AEC2B0062E903 /* MainScreenAnimator.swift */; };
+		29E5BD1D289EACCD008FA5D0 /* MMMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E5BD1C289EACCD008FA5D0 /* MMMainView.swift */; };
+		29E5BD2028A8CCDC008FA5D0 /* DigitalClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E5BD1F28A8CCDC008FA5D0 /* DigitalClock.swift */; };
+		29E5BD2228A8CCE6008FA5D0 /* AnalogClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E5BD2128A8CCE6008FA5D0 /* AnalogClock.swift */; };
+		29E5BD2428A8D6B7008FA5D0 /* MMConteinerStacksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E5BD2328A8D6B7008FA5D0 /* MMConteinerStacksView.swift */; };
+		29F2D5CB2954877600B26F50 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F2D5CA2954877600B26F50 /* Helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +26,16 @@
 		297FF3532897D5780062E903 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		297FF3552897D5780062E903 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		297FF3572897D5780062E903 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		297FF35A2897D5780062E903 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		297FF35C2897D57A0062E903 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		297FF35F2897D57A0062E903 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		297FF3612897D57A0062E903 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		297FF379289AAC160062E903 /* Properties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Properties.swift; sourceTree = "<group>"; };
+		297FF382289AEC2B0062E903 /* MainScreenAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenAnimator.swift; sourceTree = "<group>"; };
+		29E5BD1C289EACCD008FA5D0 /* MMMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMMainView.swift; sourceTree = "<group>"; };
+		29E5BD1F28A8CCDC008FA5D0 /* DigitalClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalClock.swift; sourceTree = "<group>"; };
+		29E5BD2128A8CCE6008FA5D0 /* AnalogClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalogClock.swift; sourceTree = "<group>"; };
+		29E5BD2328A8D6B7008FA5D0 /* MMConteinerStacksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMConteinerStacksView.swift; sourceTree = "<group>"; };
+		29F2D5CA2954877600B26F50 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,69 @@
 		297FF3522897D5780062E903 /* MMCalendar */ = {
 			isa = PBXGroup;
 			children = (
+				29F2D5C92954876000B26F50 /* Helpers */,
+				297FF381289AEC090062E903 /* Animators */,
+				297FF378289AAC080062E903 /* Models */,
+				297FF37428983EAF0062E903 /* App */,
+				297FF3572897D5780062E903 /* ViewController.swift */,
+				29E5BD1E289EACD5008FA5D0 /* Views */,
+				297FF37528983EC40062E903 /* Resources */,
+			);
+			path = MMCalendar;
+			sourceTree = "<group>";
+		};
+		297FF37428983EAF0062E903 /* App */ = {
+			isa = PBXGroup;
+			children = (
 				297FF3532897D5780062E903 /* AppDelegate.swift */,
 				297FF3552897D5780062E903 /* SceneDelegate.swift */,
-				297FF3572897D5780062E903 /* ViewController.swift */,
-				297FF3592897D5780062E903 /* Main.storyboard */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		297FF37528983EC40062E903 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				297FF35C2897D57A0062E903 /* Assets.xcassets */,
 				297FF35E2897D57A0062E903 /* LaunchScreen.storyboard */,
 				297FF3612897D57A0062E903 /* Info.plist */,
 			);
-			path = MMCalendar;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		297FF378289AAC080062E903 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				297FF379289AAC160062E903 /* Properties.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		297FF381289AEC090062E903 /* Animators */ = {
+			isa = PBXGroup;
+			children = (
+				297FF382289AEC2B0062E903 /* MainScreenAnimator.swift */,
+			);
+			path = Animators;
+			sourceTree = "<group>";
+		};
+		29E5BD1E289EACD5008FA5D0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				29E5BD1C289EACCD008FA5D0 /* MMMainView.swift */,
+				29E5BD1F28A8CCDC008FA5D0 /* DigitalClock.swift */,
+				29E5BD2128A8CCE6008FA5D0 /* AnalogClock.swift */,
+				29E5BD2328A8D6B7008FA5D0 /* MMConteinerStacksView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		29F2D5C92954876000B26F50 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				29F2D5CA2954877600B26F50 /* Helper.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +193,6 @@
 			files = (
 				297FF3602897D57A0062E903 /* LaunchScreen.storyboard in Resources */,
 				297FF35D2897D57A0062E903 /* Assets.xcassets in Resources */,
-				297FF35B2897D5780062E903 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,22 +204,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				297FF3582897D5780062E903 /* ViewController.swift in Sources */,
+				29E5BD1D289EACCD008FA5D0 /* MMMainView.swift in Sources */,
+				29E5BD2228A8CCE6008FA5D0 /* AnalogClock.swift in Sources */,
 				297FF3542897D5780062E903 /* AppDelegate.swift in Sources */,
+				297FF37A289AAC160062E903 /* Properties.swift in Sources */,
+				297FF383289AEC2B0062E903 /* MainScreenAnimator.swift in Sources */,
 				297FF3562897D5780062E903 /* SceneDelegate.swift in Sources */,
+				29F2D5CB2954877600B26F50 /* Helper.swift in Sources */,
+				29E5BD2428A8D6B7008FA5D0 /* MMConteinerStacksView.swift in Sources */,
+				29E5BD2028A8CCDC008FA5D0 /* DigitalClock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		297FF3592897D5780062E903 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				297FF35A2897D5780062E903 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		297FF35E2897D57A0062E903 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -289,12 +353,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 32A46KSFC5;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MMCalendar/Info.plist;
+				INFOPLIST_FILE = MMCalendar/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -317,12 +381,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 32A46KSFC5;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MMCalendar/Info.plist;
+				INFOPLIST_FILE = MMCalendar/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
